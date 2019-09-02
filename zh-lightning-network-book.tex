@@ -312,34 +312,34 @@ Donate using Bitcoin via: \url{https://tallyco.in/s/lnbook/} or fiat money at:  
 \newtheorem{example}{Example}[chapter]
 
 \chapter{介紹}
-This book is a guide to understanding the Lightning Network as a technology to solve the scalability problem of Bitcoin.
-It will first introduce the basic concepts of the Bitcoin protocol.
+本書是將閃電網路理解為解決比特幣可擴展性問題的技術的指南。
+它將首先介紹比特幣協議的基本概念。
 We will only make use of applied cryptography on a high level without the mathematical details.
-Therefore basically no cryptographic knowledge is needed to be able to follow through this book.
-For the sake of completeness, some of the cryptographic details will be stated in the appendix.
-Thus the Bitcoin section should be understandable by any computer science (or similar) undergraduate student.
-As the Lightning Network is built on top of Bitcoin, the rest of the book should be easily understandable by the same audience.
-We conclude the first chapter by looking at some fundamental issues with Bitcoin as a payment system and explain the necessity for the Lightning Network.
+因此，基本上不需要密碼學知識才能完成本書。
+為了完整起見，一些密碼學細節將在附錄中說明。
+因此，比特幣部分應該是任何計算機科學（或類似的）大學生都可以理解的。
+由於閃電網絡建立在比特幣之上，因此本書的其餘部分應該易於被同一受眾理解。
+我們通過查看比特幣作為支付系統的一些基本問題來總結第一章，並解釋閃電網路的必要性。
 
-We continue by explaining the theory and construction of the Lightning Network.
-We will understand how to construct payment channels via Revocable Sequence Maturity Contracts and how to solve the routing issues via Hashed Time Lock Contracts.
-These two forms of smart contracts allow the Blockchain to be transformed from a transaction layer for payments to an enforcing layer of those contracts.
-Similar to the real world, most contracts will never have to be enforced via a court ruling but are negotiated bilaterally between consenting parties.
+我們繼續解釋閃電網絡的理論和構建。
+我們將了解如何通過Revocable Sequence Maturity Contracts(撤銷序列到期合約)構建支付渠道，以及如何通過Hashed Timelock Contracts(哈希時間鎖合約)解決路由問題。
+這兩種形式的智能合約允許區塊鏈從支付的交易層轉換為這些合約的執行層。
+與現實世界類似，大多數合約將永遠不必通過法院裁決來執行，而是通過雙方在同意方之間進行談判。
 
-In the same sense, we will understand that the Lightning Network reduces the load of the Bitcoin network significantly by transforming it to be a contract enforcing layer instead of a value transaction layer.
+同樣，我們將理解，閃電網路通過將其轉變為合約執行層而非價值交易層，顯著降低了比特幣網路的附載。
 
-After we understand the core contracts that enable the Lightning Network, we will look at the technologies to define a properly working protocol.
-We will study the transport layer with its Sphinx mix format and Onion routing first and move on to the gossip protocol which enables the creation of a peer-to-peer network.
+在我們了解了啟用閃電網路的核心合約之後，我們將研究定義正確工作協議的技術。
+我們將首先研究具有Sphinx混合格式和洋蔥路由的傳輸層，然後繼續使用能夠創建p2p網路的八卦協議。
 
-After we understand the technical foundations of the Lightning Network, a practical guide is given.
-We look at the current wallets, implementations and tools for developers.
-We create some small Lightning Network applications to demonstrate how easy it becomes with the help of the Lightning Network to accept Bitcoin payments.
+在我們了解了閃電網路的技術基礎之後，我們給出了一個實用指南。
+我們查看當前用於開發人員的錢包、實現和工具。
+我們創建了一些小型閃電網路應用程序，以證明在閃電網路的幫助下接受比特幣支付是多麼容易。
 
-Finally, we look at some of the more advanced topics of the Lightning Network.
-These are mainly relevant for researchers and developers who want to improve the protocol.
-We decided to include these topics because it seems plausible that users of the Lightning Network want to gain a clear picture of current trends and potential future enhancements. 
+最後，我們來看一下閃電網路的更多進階議題。
+這些主要與希望改進協議的研究人員和開發人員相關。
+我們決定將這些議題包括在內，因為閃電網路的用戶希望清楚地了解當前的趨勢和潛在的未來情況。
 
-One core principle of this book is that we introduce new concepts by formulating problem statements first. We will then try to understand why these problems existed and how the technologies in this book will be able to solve them. In many cases, we will derive more specific problems which we will tackle in a similar fashion.
+這本書的一個核心原則是，我們首先制定問題陳述引入新的概念。 然後，我們將嘗試理解為什麼存在這些問題以及本書中的技術如何能夠解決這些問題。 在許多情況下，我們將得出更具體的問題，我們將以類似的方式解決這些問題。
 
 \chapter{Bitcoin}
 \section{Introduction to Electronic Cash}
