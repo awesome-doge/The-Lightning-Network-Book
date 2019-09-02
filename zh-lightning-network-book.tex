@@ -1,5 +1,7 @@
 \documentclass[a4paper,12pt,oneside,openany]{book}
 \usepackage[utf8x]{inputenc}
+\usepackage{CJKutf8}
+
 \usepackage[english]{babel}
 \usepackage{url}
 \usepackage{amsthm}
@@ -277,6 +279,8 @@ description={}}
 \author{Rene Pickhardt}
 
 \begin{document}
+\begin{CJK*}{UTF8}{bsmi}
+
 \maketitle
 
 \newpage
@@ -307,7 +311,7 @@ Donate using Bitcoin via: \url{https://tallyco.in/s/lnbook/} or fiat money at:  
 \theoremstyle{remark}
 \newtheorem{example}{Example}[chapter]
 
-\chapter{Introduction}
+\chapter{介紹}
 This book is a guide to understanding the Lightning Network as a technology to solve the scalability problem of Bitcoin.
 It will first introduce the basic concepts of the Bitcoin protocol.
 We will only make use of applied cryptography on a high level without the mathematical details.
@@ -757,5 +761,6 @@ In the temporal order of donations:
 Some of the glossary terms are taken from the English Wikipedia and might be adopted and modified. These terms are indicated by the proper attribution to the Wikipedia article as a link at the end of the respective entry. These entries are --- in contrast to the remainder of the book --- licensed as CC-BY-SA-3.0. If the entries have been modified, there will be a star (*) at the end of the URL.
 
 \printnoidxglossaries
+\end{CJK*}
 
 \end{document}
